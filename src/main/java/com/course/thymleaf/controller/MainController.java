@@ -51,7 +51,13 @@ public class MainController {
         return "each";
     }
 
-
+/*
+* There are 3 ways in which you can use fragments
+* Include: it will insert the fragment as the body of the host tag excluding the fragment tag
+* Insert: It will insert the fragment along with fragment tag as the body of the host tag
+* Replace : it will replace the host tag with the fragment tag. Host tag will be removed and the fragment tag is added along with the fragment tag
+*
+* */
 
 
 

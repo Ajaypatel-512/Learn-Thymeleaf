@@ -17,7 +17,40 @@
 
 <button id="click-button" onclick="main()">Click Here</button>
 
+<!--INCLUDE
+
+<footer id="parent-footer" th:include="fragment/demoHtml :: header">
+    <h1>From Home</h1>
+</footer>
+
+<footer id="parent-footer">
+    <h1 id="from-fragment"> From Fragment</h1>
+</footer>
+
+INSERT
+
+<footer id="parent-footer" th:insert="fragment/demoHtml :: header">
+    <h1>From Home</h1>
+</footer>
+
+<footer id="parent-footer"><nav id="from-fragment1">
+    <h1 id="from-fragment"> From Fragment</h1>
+</nav></footer>
+
+REPLACE
+
+<footer id="parent-footer" th:replace="fragment/demoHtml :: header">
+    <h1>From Home</h1>
+</footer>
+
+<nav id="from-fragment1">
+    <h1 id="from-fragment"> From Fragment</h1>
+</nav>
+--->
 
 
+<footer id="parent-footer" th:replace="fragment/demoHtml :: header">
+    <h1>From Home</h1>
+</footer>
 </body>
 </html>
