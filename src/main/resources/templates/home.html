@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <script type="text/javascript" th:src="@{js/main.js}"></script>
 </head>
 <body>
 <P>This is Home Page.</P>
@@ -10,7 +11,12 @@
 <span th:text="${#strings.toUpperCase(name)}"></span>
 <div th:with="someVariable = ${someValue}, a = 20, b = 30">
     <p th:text="'Value of a*b : '+ ${a}*${b}"></p>
+
 </div>
+
+<button onclick="main()">Click Here</button>
+
+
 
 </body>
 </html>
