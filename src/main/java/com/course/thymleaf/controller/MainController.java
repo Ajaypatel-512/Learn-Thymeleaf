@@ -12,4 +12,22 @@ public class MainController {
         model.addAttribute("name","Ajay");
         return "home";
     }
+
+    @GetMapping("/elvis")
+    public String elvisExample(Model model){
+        model.addAttribute("isAdmin",true);
+        model.addAttribute("gender","M");
+        return "elvis";
+    }
+
+    /* Conditional Statements
+     * Elvis operator  ? :
+     * If unless
+     * switch case
+     * */
+
+
+
+
+
 }
